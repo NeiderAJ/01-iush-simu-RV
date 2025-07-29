@@ -31,7 +31,7 @@ const CertificatePage = () => {
 
         <div className="cert-image-column">
           <div className="certificate-container">
-            <img src="/images/certificado-digital.png" alt="Certificado Digital" />
+            <img src={`${import.meta.env.BASE_URL}images/certificado-digital.png`} alt="Certificado Digital" />
           </div>
           <div className="cert-buttons">
             <button onClick={() => alert('Abriendo LinkedIn...')}> Compartir en LinkedIn</button>

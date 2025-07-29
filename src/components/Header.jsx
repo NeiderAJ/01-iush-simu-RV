@@ -22,14 +22,14 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="header-content">
-        <img src="/images/logo-iush.png" alt="Logo Salazar y Herrera" className="header-logo" />
+        {/* ▼▼▼ RUTA CORREGIDA ▼▼▼ */}
+        <img src={`${import.meta.env.BASE_URL}images/logo-iush.png`} alt="Logo Salazar y Herrera" className="header-logo" />
         <nav className="header-nav">
           <ul>
             {navLinks.map((link) => (
               <li key={link}>
                 <button 
                   onClick={() => handleNavigation(link)} 
-                  // ▼▼▼ ESTA ES LA LÍNEA QUE CAMBIÓ ▼▼▼
                   className={`nav-button ${link === 'Estudiantes' ? 'pulsing-button' : ''}`}
                 >
                   {link}

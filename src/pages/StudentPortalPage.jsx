@@ -23,7 +23,7 @@ const StudentPortalPage = () => {
       <div className="portal-card">
         <div className="portal-header">
           <span>CryptoCYAN Certificados le permite a la IUSH brindarte un certificado en Blockchain!</span>
-          <img src="/images/logo-iush.png" alt="Logo IUSH" className="portal-logo-iush" />
+           <img src={`${import.meta.env.BASE_URL}images/logo-iush.png`} alt="Logo IUSH" className="portal-logo-iush" />
         </div>
 
         <div className="portal-body">

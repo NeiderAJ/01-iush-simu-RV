@@ -26,8 +26,7 @@
 }
 
 /* --- Banner Principal --- */
-.banner-main {
-  background-image: url('/images/banner-home.png');
+.banner-main {  
   background-size: cover;
   background-position: center;
   color: var(--color-principal-azul);

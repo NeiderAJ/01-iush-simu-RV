@@ -15,7 +15,7 @@ const PolygonScanPage = () => {
 
       <div className="polygon-container">
         <header className="polygon-header">
-          <img src="/images/polygonscan-logo.png" alt="PolygonScan Logo" />
+        <img src={`${import.meta.env.BASE_URL}images/polygonscan-logo.png`} alt="PolygonScan Logo" />
         </header>
         <main className="polygon-main">
           <h1>Detalles de la Transacción</h1>
