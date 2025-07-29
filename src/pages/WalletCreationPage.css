@@ -1,0 +1,39 @@
+/* src/pages/WalletCreationPage.css */
+.loading-background {
+  min-height: 100vh;
+  background-color: var(--color-fondo-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3; /* Gris claro */
+  border-top: 5px solid var(--color-acento-azul); /* Azul */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 2rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-title {
+  font-size: 1.8rem;
+  color: var(--color-principal-azul);
+  margin-bottom: 1rem;
+}
+
+.loading-text {
+  font-size: 1.1rem;
+  color: var(--color-texto-gris);
+  max-width: 600px;
+  line-height: 1.6;
+}

@@ -1,0 +1,105 @@
+/* src/pages/CertificatePage.css */
+.cert-background {
+  min-height: 100vh;
+  background-color: var(--color-fondo-claro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.cert-content-wrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.cert-text-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cert-text-column h1 {
+  font-size: 3rem;
+  color: var(--color-principal-azul);
+}
+
+.cert-text-column p {
+  font-size: 1.5rem;
+  color: var(--color-texto-gris);
+  margin-bottom: 2rem;
+}
+
+.explanation-box-cert {
+  background-color: #eaf2ff;
+  border-left: 4px solid var(--color-acento-azul);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.explanation-box-cert h4, .explanation-box-cert p { /* Reutilizamos estilos */
+  margin: 0;
+}
+.explanation-box-cert h4 { margin-bottom: 0.5rem; }
+
+.cert-image-column {
+  flex: 1;
+  max-width: 450px;
+}
+
+.certificate-container {
+  max-height: 600px; /* Altura máxima para el contenedor */
+  overflow-y: auto; /* Scroll vertical si la imagen es más alta */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.certificate-container img {
+  width: 100%;
+  display: block;
+}
+
+.cert-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cert-buttons button, .cert-buttons a button {
+  flex-grow: 1;
+  background-color: var(--color-secundario-azul);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.cert-buttons button:hover {
+  background-color: var(--color-principal-azul);
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+  .cert-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cert-text-column {
+    align-items: center;
+  }
+}

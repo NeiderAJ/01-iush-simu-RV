@@ -1,0 +1,63 @@
+/* src/pages/PaymentPage.css */
+.payment-background {
+  min-height: 100vh;
+  background-color: var(--color-fondo-claro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.payment-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.payment-title {
+  font-size: 1.8rem;
+  color: var(--color-principal-azul);
+  margin-bottom: 2rem;
+}
+
+.payment-title span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-texto-gris);
+  margin-top: 0.5rem;
+}
+
+.payment-cost {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.payment-note {
+  font-size: 0.9rem;
+  color: var(--color-texto-gris);
+  margin-bottom: 2rem;
+}
+
+.btn-pagar {
+  background-color: var(--color-secundario-azul);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-pagar:hover {
+  background-color: var(--color-principal-azul);
+}

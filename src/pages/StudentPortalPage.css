@@ -1,0 +1,179 @@
+/* src/pages/StudentPortalPage.css */
+.portal-background {
+  min-height: 100vh;
+  background-color: var(--color-fondo-claro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.btn-regresar {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: white;
+  border: 1px solid var(--color-borde);
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+.btn-regresar:hover {
+  background-color: #f0f0f0;
+}
+
+.portal-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  max-width: 950px; /* Aumentamos el ancho máximo para dar espacio */
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.portal-header {
+  color: var(--color-texto-gris);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.portal-logo-iush {
+  height: 45px;
+}
+
+.portal-body h1 {
+  color: var(--color-principal-azul);
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.portal-body > p {
+  color: var(--color-texto-gris);
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+}
+
+/* ▼▼▼ ESTILOS PARA LA NUEVA ESTRUCTURA FLEXBOX ▼▼▼ */
+.portal-main-content {
+  display: flex;
+  align-items: flex-start; /* Alinea los items al inicio */
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.explanation-box {
+  background-color: #eaf2ff;
+  border-left: 4px solid var(--color-acento-azul);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  flex: 1; /* Ocupa 1 fracción del espacio */
+  max-width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: relative; /* Para que el botón de cerrar funcione */
+}
+
+.certificate-form-wrapper {
+  flex: 2; /* Ocupa 2 fracciones del espacio, será más grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ▲▲▲ FIN DE ESTILOS FLEXBOX ▲▲▲ */
+
+
+.explanation-box h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-principal-azul);
+}
+
+.explanation-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.explanation-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--color-texto-gris);
+}
+
+.certificate-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.certificate-select {
+  flex-grow: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 5px;
+}
+
+.btn-obtener-certificado {
+  background-color: var(--color-secundario-azul);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-obtener-certificado:hover {
+  background-color: var(--color-principal-azul);
+}
+
+/* ▼▼▼ MEDIA QUERY PARA RESPONSIVIDAD ▼▼▼ */
+/* Se aplicará en pantallas de 900px o menos (tablets y móviles) */
+@media (max-width: 900px) {
+  .portal-main-content {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos apilados */
+  }
+
+  .explanation-box {
+    max-width: 500px; /* Permite que ocupe más ancho en modo columna */
+    width: 100%;
+  }
+
+  .portal-card {
+    padding: 1.5rem;
+  }
+
+  .portal-body h1 {
+    font-size: 2rem;
+  }
+}
+
+/* En pantallas muy pequeñas, ajustamos más */
+@media (max-width: 500px) {
+  .certificate-form {
+    flex-direction: column;
+  }
+  .certificate-select, .btn-obtener-certificado {
+    width: 100%;
+  }
+}
